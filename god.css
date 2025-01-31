@@ -1,0 +1,543 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+section {
+    /* min-height: 100vh; */
+    padding: 13rem 2% 2rem;
+}
+nav{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    font-size: 20px;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;  
+}
+
+.logo {
+    color: yellow;
+    font-size: 30px;
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+}
+nav ul{
+    font-size: 30px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+li a:hover{
+    color: yellow;
+}
+nav ul li{
+    list-style-type: none;
+}
+nav ul li a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.menu-icon{
+    display: none;
+}
+.menu-icon {
+    color: white;
+    font-size: 30px;
+    position: relative;
+    bottom: 30px;
+}
+@media (max-width:600px){
+    nav ul{
+        position: absolute;
+        top: 40px;
+        left: 6px;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background:rgb(179, 103, 165);
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 0;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+}
+.home-content {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-basis: 300px; */
+    padding: 30px;
+    justify-content: space-between;
+}
+.mypic img {
+    height: 400px;
+    width: 400px;
+    border-radius: 70%;
+    border: 5px solid yellow;
+    position: relative;
+    right: 50px;
+}
+.hello {
+    font-size: 30px;
+    color: rgb(229, 229, 128);
+}
+.name {
+    font-size: 80px;
+}
+.role {
+    font-size: 50px;
+}
+.hire {
+    height: 40px;
+    width: 130px;
+    margin: 10px;
+    background-color: yellow;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.abt:hover ,.hire:hover,.resume:hover{
+    background-color: white;
+}
+.abt {
+    height: 40px;
+    width: 130px;
+    background-color: yellow;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 30px;
+}
+.aboutme {
+    font-size: 50px;
+    display: flex;
+}
+.bi-person-circle{
+    position: relative;
+    top: 10px;
+    color: yellow;
+}
+.social a {
+    /* margin-top: 100px; */
+    /* display: inline-block; */
+    margin: 10px;
+}
+.social1 a {
+    margin: 10px;
+}
+.insta {
+    color: yellow;
+}
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.u1 img {
+    height: 600px;
+    width: 400px;
+    border: 5px solid yellow;
+    margin: 50px;
+    position: relative;
+    bottom: 90px;
+}
+.lor {
+    font-size: 20px;
+    /* display: flex; */
+}
+.g {
+    font-size: 27px;
+    color: yellow;
+    font-weight: 600;
+}
+.mar {
+    font-size: 27px;
+    text-align: justify;
+}
+.u2 {
+    margin: 20px;
+    position: relative;
+    bottom: 80px;
+}
+.resume {
+    height: 50px;
+    width: 150px;
+    font-size: 25px;
+    border-radius: 29px;
+    background-color: yellow;
+}
+.bi-mortarboard-fill{
+    color: yellow;
+}
+.education-content {
+    display: flex; 
+    flex-wrap: wrap;
+    flex-grow: 2;
+    /* display: grid; */
+    /* grid-template-columns: (3 1fr); */
+    justify-content: center;
+    position: relative;
+    bottom: 80px;
+}
+.heading1 {
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    bottom: 80px;
+}
+.heading3{
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    bottom: 80px;
+}
+.heading4{
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    bottom: 80px;
+}
+.card {
+    /* display: flex; */
+    margin: 10px;
+    border: 5px solid rgb(240, 240, 141);
+    text-align: center;
+}
+.deg{
+    font-size: 30px;
+    color: black;
+}
+.list-group-item {
+    height: 100px;
+}
+ul {
+    font-size: 20px;
+}
+li {
+    height: 50px;
+}
+.bhar {
+    height: 40px;
+}
+.year {
+    height: 40px;
+}
+.skill-content{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 80px;
+}
+.bi-sliders{
+    color: yellow;
+}
+.skill{
+margin: 10px;
+justify-content: center;
+align-items: center;
+font-size: 26px;
+backdrop-filter: blue(10px);
+}
+.skill .skill-bar{
+width: 100%;
+justify-content: center;
+align-items: center;
+}
+.skill-bar .skill-content{
+flex-basis: 65%;
+width: 100%;
+padding: 20px 40px 20px 15px;
+}
+.skill-content .ski:not(:last-child){
+margin-bottom: 40px;
+
+}
+.ski .details{
+display: flex;
+justify-content: space-between;
+margin-bottom: 6px;
+width: 0;
+opacity: 0;
+}
+.ski .details.django{
+animation: django-fill 2s forwards;
+}
+.ski .details.mangodb{
+animation: mangodb-fill 2s forwards;
+}
+.ski .details.python{
+animation: python-fill 2s forwards;
+}
+.ski .details.html{
+animation: html-fill 2s forwards;
+}
+.ski .details.css{
+animation: css-fill 2s forwards;
+}
+.ski .details.java{
+animation: java-fill 2s forwards;
+}
+.ski .details.msoffice{
+animation: msoffice-fill 2s forwards;
+}
+.ski .bar{
+position: relative;
+border: 2px solid rgb(222, 225, 235);
+border-radius: 20px;
+}
+.ski .bar div{
+position: relative;
+width: 0;
+height: 9px;
+border-radius: 10px;
+background-color: yellow;
+}
+.bar #django-bar{
+animation: django-fill 2s forwards;
+}
+@keyframes django-fill{
+100%{
+width: 78%;
+opacity: 1;
+}
+}
+.bar #mangodb-bar{
+animation: mangodb-fill 2s forwards;
+}
+@keyframes mangodb-fill{
+100%{
+width: 73%;
+opacity: 1;
+}
+}
+.bar #python-bar{
+animation: python-fill 2s forwards;
+}
+@keyframes python-fill{
+100%{
+width: 80%;
+opacity: 1;
+}
+}
+.bar #html-bar{
+animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+100%{
+width: 90%;
+opacity: 1;
+}
+}
+.bar #css-bar{
+animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+100%{
+width: 73%;
+opacity: 1;
+}
+}
+.bar #java-bar{
+animation: java-fill 2s forwards;
+}
+@keyframes java-fill{
+100%{
+width: 50%;
+opacity: 1;
+}
+}
+.bar #msoffice-bar{
+animation: msoffice-fill 2s forwards;
+}
+@keyframes msoffice-fill{
+100%{
+width: 69%;
+opacity: 1;
+}
+}
+.know{
+margin: 30px;
+width: 500px;
+flex-grow: 1;
+}
+.know1{
+margin: 30px;
+width: 500px;
+flex-grow:1;
+}
+.bi-award{
+    color: yellow;
+}
+.project-content{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.cardp{
+  margin: 10px;
+  /* flex-grow: 0; */
+  /* margin-left: 90px; */
+  border: 5px solid yellow;
+  position: relative;
+  bottom: 60px;
+  /* margin-left: 100px; */
+}
+.card-titlep{
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+.card-textp{
+  font-size: 20px;
+  color: white;
+}
+.btn-primary1{
+  background-color: yellow;
+  margin-left: 100px;
+  font-size: 15px;
+}
+.bi-file-person-fill{
+  color: yellow;
+}
+.contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.contactinfo{
+    width: 50%;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: black;
+    min-height: 500px;
+}
+h3{
+    font-size: 30px;
+    color: yellow;
+}
+.address p{
+    display: flex;
+    font-size: 25px;
+}
+.contactform{
+    position: relative;
+    width: 40%;
+    padding: 60px;
+    flex-grow: 1;
+    background-color: yellow;
+    min-height: 400px;
+    border-radius: 20px;
+}
+.box{
+    margin-left: 50px;
+    position: relative;
+    right: 50px;
+    padding: 20px 0;
+    display: flex;
+}
+.connect{
+    /* margin-left: 10px; */
+    color: rgb(255, 252, 253);
+    font-size: 35px;
+}
+.social2 a {
+    margin: 10px;
+    margin-left: 10px;
+}
+.send{
+    font-size: 30px;
+    color: black;
+}
+.inputbox{
+    position: relative;
+    width: 100%;
+}
+input{
+    height: 50px;
+    background-color: yellow;
+}
+input[type=text],input[type=email]{
+    font-size: 20px;
+  }
+textarea:required{
+    font-size: 20px;
+    height: 100px;
+    background-color: yellow;
+}
+input,textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1.1rem;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+}
+ .inputbox span1{
+    position: absolute;
+    left: 0;
+    color: black;
+    pointer-events: none;
+    padding: 5px 0;
+    margin: 10px 0;
+    font-size:25px;
+    transition: 0.5s;
+}
+input:focus ~ span1,
+textarea:focus ~ span1,
+input:valid ~ span1,
+textarea:valid ~ span1
+{
+    color: red;
+    font-size: 2.3rem;
+    transform: translateY(-20px);
+}
+.ok{
+    margin-top: 20px;
+    font-size: 20px;
+    height: 50px;
+    width: 100px;
+    border-radius: 15px;
+    background-color: rgb(239, 51, 82);
+}
+.copy{
+    width: 100%;
+    height: 35px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+}
